@@ -8,7 +8,8 @@ header{text-align: center;
        font-family:'Bebas Neue';
       font-size: 30px;
       color: #642400;
-      text-align: center;}
+      text-align: center;
+      }
 table{text-align: center;}
 td{text-align: center;
    margin: 30px;
@@ -18,6 +19,6 @@ td{text-align: center;
 
 a{
     color: #006663;
-    background-color: #00b3ad;
+    background-color: #642400;
 }
 
