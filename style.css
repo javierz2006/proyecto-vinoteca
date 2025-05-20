@@ -21,4 +21,10 @@ a{
     color: #006663;
     background-color: #642400;
 }
-
+@font-face {
+       font-family: "fuente1" ;
+       src: url(./RobotoCondensed-Regular.ttf);
+}
+p{
+  font-family:"fuente1";
+}
