@@ -4,7 +4,7 @@ body{
 }
 /*estilo del encabezado*/
 header{text-align: center;
-       background-image:url(./vino\(2\).jpg);
+       background-image:url(../assets/images/vino\(2\).jpg);
        background-size: 100% 100vh;
        background-attachment: fixed;
       font-size: 30px;
@@ -34,6 +34,7 @@ a{
 p{
   font-family:"fuente1";
 }
+/*estilo del titulo*/
 h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
