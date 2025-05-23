@@ -7,7 +7,6 @@ header{text-align: center;
        background-image:url(./vino\(2\).jpg);
        background-size: 100% 100vh;
        background-attachment: fixed;
-       font-family:'Bebas Neue';
       font-size: 30px;
       color: #642400;
       text-align: center;
@@ -35,3 +34,10 @@ a{
 p{
   font-family:"fuente1";
 }
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: red
+}
+
