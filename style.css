@@ -1,6 +1,8 @@
+/*color de fondo*/
 body{
     background-color: #00B3AD;
 }
+/*estilo del encabezado*/
 header{text-align: center;
        background-image:url(./vino\(2\).jpg);
        background-size: 100% 100vh;
@@ -10,20 +12,26 @@ header{text-align: center;
       color: #642400;
       text-align: center;
       }
-table{text-align: center;}
+/*estilo de la imagenes*/
 td{text-align: center;
    margin: 30px;
    padding: 30px;
    size: 100% 100vh;
-   }
+  }
+  /*estilo de los enlaces*/
 a{
     color: #006663;
-    background-color: #642400;
+    cursor: pointer;
+    transition: backgound-color 0.3s ease;
 }
+/*tipo de fuente local*/
+.vinculo:hover{background-color: rgb(15, 126, 177);
+         color:white;}
 @font-face {
        font-family: "fuente1" ;
        src: url(./RobotoCondensed-Regular.ttf);
 }
+/*estilo de los parrafos*/
 p{
   font-family:"fuente1";
 }
