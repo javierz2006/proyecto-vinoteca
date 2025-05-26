@@ -28,7 +28,7 @@ a{
          color:white;}
 @font-face {
        font-family: "fuente1" ;
-       src: url(./RobotoCondensed-Regular.ttf);
+       src: url(../assets/fonts/RobotoCondensed-Regular.ttf);
 }
 /*estilo de los parrafos*/
 p{
