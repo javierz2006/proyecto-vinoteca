@@ -10,19 +10,74 @@ header{text-align: center;
       font-size: 30px;
       color: #642400;
       text-align: center;
+      position: relative;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      
       }
-/*estilo de la imagenes*/
-td{text-align: center;
-   margin: 30px;
-   padding: 30px;
-   size: 100% 100vh;
-  }
-  /*estilo de los enlaces*/
-a{
-    color: #006663;
-    cursor: pointer;
-    transition: backgound-color 0.3s ease;
+    
+.container-menu {
+  display: flex;
+  position:sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+} 
+
+ul {
+  list-style: none;
+} 
+
+.nav li a {
+  background-color: #640000;
+  color:antiquewhite;
+  width: 100px;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
 }
+
+.nav li a:hover{
+  background-color: #434343;
+}
+
+.nav > li {
+  float:left;
+} 
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+/*estilo de la imagenes*/
+.cont-img {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 30px;
+  padding: 30px;
+  size: 100% 100vh;
+}
+
+.img-vinos {
+  text-align: center;
+}
+
+
+/*estilo de los enlaces*/
+a {
+  color: #006663;
+  cursor: pointer;    
+  transition: backgound-color 0.3s ease;
+}
+
 /*tipo de fuente local*/
 .vinculo:hover{background-color: rgb(15, 126, 177);
          color:white;}
@@ -41,4 +96,94 @@ h1 {
   font-style: normal;
   color: red
 }
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*carrusel de imagenes de la página principal*/
+.slider{
+    width: 25%;
+    height: 25%;
+    overflow: hidden;
+    margin-left: 1%;
+}
+figure{
+    position: relative;
+    left: 0;
+    width: 1310px;/*width dikali-slide*/
+    animation: 25s  slide infinite ease-in-out;
+}
+.slide h1{
+    font-size: 3rem;
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    text-align:center;
+
+}
+.slide{
+    display: block;
+    position: relative;
+    width: 25%; /*width dibaji-slide*/
+    float: left;
+    
+}
+.slide img{
+    width: 400px;
+    height: 400px;
+   
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    20% {
+        left: -100%;
+    }
+    30%{
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    50%{
+        left: -200%;
+    }
+    55% {
+        left: -300%;
+    }
+    65%{
+        left: -300%;
+    }
+    66% {
+        left: -200%;
+    }
+    74%{
+        left: -200%;
+    } 
+    75% {
+        left: -100%;
+    }
+    85%{
+        left: -100%;
+    }
+    90%{
+        left: 0;
+    }
+    95%{
+        left: 0;
+    }
+    100%{
+        left:0;
+    }  
+}
+
 
