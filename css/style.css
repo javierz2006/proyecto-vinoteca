@@ -16,12 +16,12 @@ header{text-align: center;
       height: 100px;
       
       }
-    
+   /*Menu desplegable*/ 
 .container-menu {
   display: flex;
   position:sticky;
   top: 0;
-  left: 0;
+  left: 15;
   z-index: 2;
 } 
 
@@ -90,17 +90,36 @@ p{
   font-family:"fuente1";
 }
 /*estilo del titulo*/
-h1 {
+h1, h2 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: red
 }
-
+/*galeria de productos*/
 .galeria{
     display: flex;
     flex-direction: column;
 }
+/*pie de pagina*/
+ footer {background-color: #006663;
+         padding: 20px 0;
+         position: relative;
+         bottom: 0;
+         width: 100%;
+         display: flex;
+         justify-content: center;}
+  
+  .pie{text-align: center;}
+
+  .contenedor{width: 90%;}
+
+  .col{display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 80px;}
+  .fil{text-align: center;}
+
 
 
 
