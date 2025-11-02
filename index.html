@@ -1,88 +1,93 @@
-<!--Trabjo de Toledo Abigail-->
 <!DOCTYPE html>
-<html lang="en">
- <head>       
-  <link rel="icon" href="./assets/iconos/vino.ico">
-    <meta charset="UTF-8">
-    <link  rel="stylesheet" href="./css/style.css" type="text/css" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinoteca</title>
+      <link rel="icon" href="./assets/iconos/vino.ico" />
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.css" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Vinoteca</title>
- </head>  
-  <body>
-    <header>
-    <h1>Vinoteca</h1> 
-      <!--menú realizado por Zamorano y los enlaces realizados por Toledo-->
-      <div class="container-menu">
-      <ul class="nav">
-        <li><a href="">Menú</a>
-          <ul>
-              <li><a class="vinculo" href="./pages/Quienes somos.html">Quienes somos</a></li>
-              <li><a class="vinculo" href="#Historia_del_vino">Historia del vino</a></li>
-              <li><a class="vinculo" href="#nuestros-productos">Nuestros Productos</a></li>
-          </ul>
-        </li>
-      </ul>
-      </div>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__titulo">Vinoteca</h1>
+      <nav class="nav" id="nav-menu">
+        <ul class="nav__lista">
+          <li class="nav__item">
+            <a href="" class="nav__link">Menú</a>
+            <ul class="nav__submenu">
+               <li><a class="nav__link" href="./index.html">Principal</a></li>
+              <li><a class="nav__link" href="./pages/Quienes somos.html">Quiénes somos</a></li>
+              <li><a class="nav__link" href="#historia-vino">Historia del vino</a></li>
+              <li><a class="nav__link" href="./pages/vinos.html">Nuestros Productos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
-<!--trabajo de Zamorano Javier-->
-<main> 
- <section>
-  <h2>La Vinoteca</h2>
-      <p>Esta pagina es sobre un sitio donde se venden vinos de diferentes bodegas.</p>
- </section><!--realizado por Zamorano y Toledo-->
-   <div class="slider">
-        <figure>
-           <div class="slide">
-                <img src="./assets/images/foto2.jpg" width="350" height="300" alt="joji">
-            </div>    
-            <div class="slide">
-                <img src="./assets/images/foto3.jpg" width="350" height="300" alt="joji">
-            </div>
-            <div class="slide">
-                <img src="./assets/images/foto5.jpg" width="350" height="300" alt="joji">
-            </div>
-            <div class="slide">
-                <img src="./assets/images/vino(1).jpg" width="350" height="300" alt="joji">
-            </div>
+
+    <main class="main">
+      <section class="intro">
+        <h2 class="intro__titulo">La Vinoteca</h2>
+        <p class="intro__texto">
+          Esta página presenta un sitio donde se venden vinos de diferentes bodegas nacionales.
+        </p>
+      </section>
+
+      <section class="slider">
+        <figure class="slider__contenedor">
+          <div class="slider__item"><img src="./assets/images/foto2.jpg" alt="vino" /></div>
+          <div class="slider__item"><img src="./assets/images/foto3.jpg" alt="vino" /></div>
+          <div class="slider__item"><img src="./assets/images/foto5.jpg" alt="vino" /></div>
+          <div class="slider__item"><img src="./assets/images/vino(1).jpg" alt="vino" /></div>
         </figure>
-   </div>
- <section>
-  <h3 id="nuestros-productos">Nuestros Productos</h3>
-  <!--flexbox para ordenar imagenes-->
-  <div class="cont-img">
-        <img src="./assets/images/vino(1).jpg" alt="vino" width="250" height="250">
-        <div class="img-vinos">
-          <a href="./pages/vinos.html"><img src="./assets/images/vino(3).png" alt="vino" width="250" height="250"></a>
-          <p>NUESTROS VINOS</p>
+      </section>
+
+      <section class="productos" id="productos">
+        <h3 class="productos__titulo">Nuestros Productos</h3>
+        <div class="productos__contenedor">
+          <img class="productos__img" src="./assets/images/vino(1).jpg" alt="vino" width="250" height="250"/>
+          <div class="productos__bloque">
+            <a href="./pages/vinos.html">
+              <img class="productos__img" src="./assets/images/vino(3).png" alt="vino" width="250" height="250"/>
+            </a>
+            <p class="productos__texto">Nuestros Vinos</p>
+          </div>
+          <img class="productos__img" src="./assets/images/vino(4).jpg" alt="vino" width="250" height="250"/>
         </div>
-        <img src="./assets/images/vino(4).jpg" alt="vino" width="250" height="250">
-  </div>
- </section>
- <section id="Historia_del_vino">
-  <h1>Historia del vino en nuestro País</h1>
-  <p>Hoy, la industria argentina del vino es la más importante del sector en América del Sur y una de las más reconocidas en el mundo. Pero este presente es producto de un largo recorrido histórico, que incluye saberes de pueblos originarios, tradición europea y trabajo de los pioneros que apostaron por un vino nacional con identidad propia.Desde las primeras plantaciones en Santiago del Estero, pasando por el trabajo de los Jesuitas y el desarrollo de la uva Malbec en Cuyo y otras regiones del territorio argentino, la cultura vitivinícola tiene mucho para contar a lo largo de su historia, y asimismo un futuro muy prometedor. En este artículo recorreremos parte de la historia del vino argentino: los primeros viñedos, las bodegas pioneras y el trayecto entre la producción masiva y el nombre propio ganado en el mundo. Además, los recomendados del Somm con algunos de los vinos emblemáticos que representan nuestra viticultura.</p>
-  <a class="vinculo" href="https://blog.enotek.com.ar/vino-argentino-cinco-siglos-de-historia/">Más info aquí</a>
- </section>
-</main>
-<footer>
- <div class="contenedor">
-   <div class="pie"> 
-    <p>Siguenos en nuestras redes sociales</p>
-      <div class="col">
-        <!--flexbox para oredenar iconos-->
-        <div class="fil">
-          <a href=""><img src="./assets/iconos/logotipo-de-instagram (1).png"></a>
-          <a href=""><img src="./assets/iconos/twitter.png"></a>
-          <a href=""><img src="./assets/iconos/facebook.png"></a>
+      </section>
+
+      <section class="historia" id="historia-vino">
+        <h2 class="historia__titulo">Historia del vino en nuestro país</h2>
+        <p class="historia__texto">
+          Hoy, la industria argentina del vino es una de las más reconocidas del mundo. Este
+          presente es el resultado de un largo recorrido histórico que incluye saberes de pueblos
+          originarios, tradición europea y el trabajo de los pioneros que apostaron por un vino
+          nacional con identidad propia.
+        </p>
+        <a class="historia__link" href="https://blog.enotek.com.ar/vino-argentino-cinco-siglos-de-historia/" target="_blank">Más info aquí</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contenedor">
+        <p class="footer__texto">Síguenos en nuestras redes sociales</p>
+        <div class="footer__iconos">
+          <a href="#" class="footer__icono"
+            ><img src="./assets/iconos/logotipo-de-instagram (1).png" alt="instagram"
+          /></a>
+          <a href="#" class="footer__icono"
+            ><img src="./assets/iconos/twitter.png" alt="twitter"
+          /></a>
+          <a href="#" class="footer__icono"
+            ><img src="./assets/iconos/facebook.png" alt="facebook"
+          /></a>
         </div>
+        <p class="footer__agradecimiento">Gracias por visitarnos</p>
       </div>
-      <p>Gracias por visitarnos</p>
-   </div>
- </div>
-</footer>
-  </body> 
+    </footer>
+  </body>
 </html>
-<!--al Sketch lo hicimos entre los dos y Toledo Abigail elijio el nombre de la pagina-->
