@@ -252,44 +252,84 @@
   height: 30px;
 }
 
-/* ===========================
+ /* ===========================
    Responsive
 =========================== */
 
+/* ------------------------------ 
+       pantallas pequeñas (< 740 px)       
+------------------------------ */
+
 @media (max-width: 740px) {
-  .nav__submenu {
-    position: relative;  
-    width: 100%;          
-    min-width: unset;    
-    box-shadow: none;     
+  /* El contenedor principal del nav */
+  .nav {
+    display: block;
   }
 
+  /* El ítem que contiene el submenu */
+  .nav__item {
+    width: 100%;
+    position: relative;
+  }
+
+  /* Ajustes del submenu */
+  .nav__submenu {
+    position: relative; 
+    width: 100%;
+    min-width: unset;
+    left: 0;
+    top: auto;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #640000;
+    display: none; 
+  }
+
+  /* Mostrar submenu al tocar el item */
+  .nav__item:hover .nav__submenu {
+    display: block;
+  }
+
+  /* Links del submenu */
   .nav__submenu .nav__link {
-    display: block;       
+    display: block;
+    width: 100%;
     padding: 12px 15px;
   }
-
-  .nav__item {
-    width: 100%;          
-  }
 }
 
+
+/* ------------------------------ 
+          Tablets     
+ ------------------------------ */
 @media (min-width: 768px) {
-.header{
-  color: #f5f5f5;
-}
+  .header {
+    color: #f5f5f5;
+  }
+
   .header__titulo {
-  font-size: 60px;
-  color: #f5f5f5;
-}
+    font-size: 60px;
+    color: #f5f5f5;
+  }
+
   .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
   }
+
   .nav__submenu {
+    position: absolute;
     top: 100%;
+    left: 0;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 0 0 4px 4px;
+    display: none;
+  }
+
+  .nav__item:hover .nav__submenu {
+    display: block;
   }
 
   .slider__item img {
