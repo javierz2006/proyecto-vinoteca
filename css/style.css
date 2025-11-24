@@ -256,26 +256,21 @@
    Responsive
 =========================== */
 
-@media (min-width: 300px) {
-.header{
-  color: #f5f5f5;
-}
-  .header__titulo {
-  font-size: 60px;
-  color: #f5f5f5;
-}
-  .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-  }
+@media (max-width: 740px) {
   .nav__submenu {
-    top: 100%;
+    position: relative;  
+    width: 100%;          
+    min-width: unset;    
+    box-shadow: none;     
   }
 
-  .slider__item img {
-    max-width: 500px;
+  .nav__submenu .nav__link {
+    display: block;       
+    padding: 12px 15px;
+  }
+
+  .nav__item {
+    width: 100%;          
   }
 }
 
